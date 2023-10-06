@@ -1,0 +1,130 @@
+/* BG PRINCIPALES */
+
+@mixin bg {
+  height: 65rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/* NAV  */
+
+@mixin nav {
+  .barra{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 4rem;
+    @media (min-width: 950px) {
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+          align-items: center;
+          padding-top: 4rem;
+     }
+     .span{
+       display: inline-block;
+       @media (min-width: 400px) {
+         display: inline;
+       }
+     }
+    .nav ul li{
+        display: block;
+        transition: all 500ms ease;
+        @media (min-width: 950px) {
+          display: inline-block;
+       }
+        a{
+          padding: 0.5rem 1rem;
+          font-size: 2rem;
+          color: $color-texto;
+          &:hover{
+            color: $color-decoracion;
+          }
+      } 
+      &:hover{
+        transform: scale(1.2);
+      }
+    }
+}
+.subtitulo{
+    color: $color-texto;
+  }
+}
+
+/* FOOTER */
+
+@mixin footer {
+    background-color: $color-footer;
+    max-width: 100%;
+    margin-top: 4rem;
+    .barra{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 4rem;
+      @media (min-width: 950px) {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 4rem;
+       }
+       .nav ul li{
+        display: block;
+        transition: all 500ms ease;
+        @media (min-width: 950px) {
+          display: inline-block;
+       }
+        a{
+          padding: 0.5rem 1rem;
+          font-size: 2rem;
+          color: $color-texto;
+          &:hover{
+            color: $color-decoracion;
+          }
+      } 
+      &:hover{
+        transform: scale(1.2);
+      }
+    }
+      .redes{
+        display: flex;
+        flex-direction: row;
+        a{
+          margin: 3rem;
+          color: $color-texto;
+          font-size: 4rem;
+          transition: all 500ms ease;
+        }
+        .facebook:hover{
+          color: $color-facebook;
+          transform: scale(1.4);
+           
+        }
+        .instagram:hover{
+          color: $color-instagram;
+          transform: scale(1.4);
+        }
+        .twitter:hover{
+          color: $color-twitter;
+          transform: scale(1.4);
+        }
+        .youtube:hover{
+          color: $color-youtube;  
+          transform: scale(1.4);
+        }
+      }
+   }
+    h2{
+        color: $color-texto;
+    }
+}
+
+
+
+
+
+
